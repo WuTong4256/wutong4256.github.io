@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-07-29T15:55:50.047Z</updated>
+  <updated>2022-07-30T14:59:36.020Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2022/07/30/vscode/"/>
+    <id>http://example.com/2022/07/30/vscode/</id>
+    <published>2022-07-30T15:19:31.356Z</published>
+    <updated>2022-07-30T14:59:36.020Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="vscode编辑器"><a href="#vscode编辑器" class="headerlink" title="vscode编辑器"></a>vscode编辑器</h1><h2 id="vscode介绍"><a href="#vscode介绍" class="headerlink" title="vscode介绍"></a>vscode介绍</h2><p>通俗来讲就是你编辑代码的一个工具</p><h2 id="vscode安装"><a href="#vscode安装" class="headerlink" title="vscode安装"></a>vscode安装</h2><p>此处省略安装方法</p><h2 id="vscode编辑器常用快捷键"><a href="#vscode编辑器常用快捷键" class="headerlink" title="vscode编辑器常用快捷键"></a>vscode编辑器常用快捷键</h2><table><thead><tr><th align="center">快捷键</th><th align="center">功能</th></tr></thead><tbody><tr><td align="center">Ctrl + c/v</td><td align="center">复制/粘贴</td></tr><tr><td align="center">Alt + shift 拖动鼠标</td><td align="center">选中某块区域</td></tr><tr><td align="center">Alt + ↑/↓</td><td align="center">向上/向下移动行</td></tr><tr><td align="center">Shift + Alt + ↑/↓</td><td align="center">向上/向下复制行</td></tr><tr><td align="center">Ctrl+ /</td><td align="center">注释</td></tr><tr><td align="center">Ctrl + +/-</td><td align="center">放大界面/缩小界面</td></tr><tr><td align="center">Ctrl+ Alt + ↑/↓</td><td align="center">添加多个光标（多行同时输入同样的内容）</td></tr><tr><td align="center">Alt + z</td><td align="center">切换是否换行</td></tr><tr><td align="center">Ctrl + d</td><td align="center">选定多个相同单词</td></tr><tr><td align="center">Ctrl + h</td><td align="center">替换/全局替换</td></tr><tr><td align="center">Alt + shift+左箭头/右箭头</td><td align="center">选中行</td></tr><tr><td align="center">Ctrl + 左箭头/右箭头</td><td align="center">光标定位到单词首/单词尾</td></tr><tr><td align="center">Home/End</td><td align="center">光标定位到首行/行末</td></tr><tr><td align="center">Ctrl + shift+ 左箭头/右箭头</td><td align="center">选中单词</td></tr></tbody></table><h2 id="vscode编辑器适用插件"><a href="#vscode编辑器适用插件" class="headerlink" title="vscode编辑器适用插件"></a>vscode编辑器适用插件</h2><table><thead><tr><th>插件名称</th><th>插件功能</th></tr></thead><tbody><tr><td>Chinese (Simplified) Language Pack for Visual Studio Code</td><td>软件汉化</td></tr><tr><td>Auto Rename Tag</td><td>自动完成另一侧标签的同步修改</td></tr><tr><td>Bracket Pair Colorizer</td><td>给嵌套的各种括号加上不同的颜色</td></tr><tr><td>Path Intellisense</td><td>智能路径提示，可以在你输入文件路径时智能提示</td></tr><tr><td>JavaScript(ES6) code snippets</td><td>ES6语法智能提示以及快速输入</td></tr><tr><td>Vetur</td><td>Vue多功能集成插件</td></tr><tr><td>EsLint</td><td>语法纠错</td></tr><tr><td></td><td></td></tr></tbody></table>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;vscode编辑器&quot;&gt;&lt;a href=&quot;#vscode编辑器&quot; class=&quot;headerlink&quot; title=&quot;vscode编辑器&quot;&gt;&lt;/a&gt;vscode编辑器&lt;/h1&gt;&lt;h2 id=&quot;vscode介绍&quot;&gt;&lt;a href=&quot;#vscode介绍&quot; class=&quot;</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>HTML笔记</title>
@@ -46,12 +66,12 @@
     <link href="http://example.com/2022/07/28/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
     <id>http://example.com/2022/07/28/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</id>
     <published>2022-07-28T06:36:09.000Z</published>
-    <updated>2022-07-29T15:56:07.425Z</updated>
+    <updated>2022-07-30T09:00:47.490Z</updated>
     
     
     
     
-    <category term="日常" scheme="http://example.com/categories/%E6%97%A5%E5%B8%B8/"/>
+    <category term="其他" scheme="http://example.com/categories/%E5%85%B6%E4%BB%96/"/>
     
     
     <category term="其他" scheme="http://example.com/tags/%E5%85%B6%E4%BB%96/"/>
