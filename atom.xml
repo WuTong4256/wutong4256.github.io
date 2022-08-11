@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-07-30T15:21:33.106Z</updated>
+  <updated>2022-08-11T10:05:18.148Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>清除浮动</title>
+    <link href="http://example.com/2022/08/11/%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8/"/>
+    <id>http://example.com/2022/08/11/%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8/</id>
+    <published>2022-08-11T10:03:53.000Z</published>
+    <updated>2022-08-11T10:05:18.148Z</updated>
+    
+    <content type="html"><![CDATA[<p>在《标准文档流》里面提到过<strong>浮动</strong>可以脱离标准文档流（也叫做脱标）</p><p>然后先简单说一下浮动（flout）</p><img src="assets/image-20220811172825250.png" alt="image-20220811172825250" style="zoom:25%;" /><p>这种就是标准文档流的写法，内容从上而下、从左往右。</p><p>然后我们给下面的三个盒子设置float：left</p><img src="assets/image-20220811173156232.png" alt="image-20220811173156232" style="zoom: 50%;" /><p>此时三个盒子已经浮动起来了，但我们会发现一件事请，就是外面的盒子，并没有包住三个盒子（这种情况就是脱离了标准文档流）</p><p>于是需要我们去清除浮动</p><p><strong>什么是清除浮动？</strong></p><p>清除浮动的意思是清除元素浮动造成的影响。</p><p>清除浮动的方法1：给父盒子加高</p><p>清除浮动的方法2：让父盒子成为BFC（设置overflow：hidden）</p><p>overflow：hidden；意思是溢出隐藏</p><p>简单俩说，只要父盒子加上overflow：hidden；他就能被浮动的子怨怒是撑出高度了，从而清除了浮动。</p><img src="assets/image-20220811174121004.png" alt="image-20220811174121004" style="zoom:50%;" /><p>清除浮动的方法3：.clearfix方法</p><p>需要在css样式里面写</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line"><span class="comment">/*伪元素，品控捏造的HTML元素*/</span></span><br><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">::after</span>&#123;</span><br><span class="line">    <span class="comment">/*content这个词语表示“内容”，内容是空*/</span></span><br><span class="line">    <span class="attribute">content</span>:<span class="string">&quot;&quot;</span>;</span><br><span class="line">    <span class="comment">/*清除浮动影响*/</span></span><br><span class="line">    <span class="attribute">clear</span>:both;</span><br><span class="line">    <span class="comment">/*转为块级元素*/</span></span><br><span class="line">    <span class="attribute">display</span>:block;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure><p>使用的时候只需要在父盒子添加一个类名就可以了。例如</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;clearfix&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>2<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>3<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>4<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><p><strong>BFC</strong></p><p>BFC（Box Formatting Context，块级格式化上下文）是独立渲染容器，它内部的元素不影响区域外的 其他元素，也不会被区域外的其他元素影响。</p><p>形成BFC（块级格式化上下文）的三类方法：</p><p>1、overflow：hidden</p><p>2、脱标（浮动、绝对定位、固定定位）</p><p>3、display的值是inline-block、flex、table-cell</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;在《标准文档流》里面提到过&lt;strong&gt;浮动&lt;/strong&gt;可以脱离标准文档流（也叫做脱标）&lt;/p&gt;
+&lt;p&gt;然后先简单说一下浮动（flout）&lt;/p&gt;
+&lt;img src=&quot;assets/image-20220811172825250.png&quot; alt=&quot;image-20</summary>
+      
+    
+    
+    
+    <category term="笔记" scheme="http://example.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="CSS" scheme="http://example.com/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>标准文档流</title>
+    <link href="http://example.com/2022/08/11/%E6%A0%87%E5%87%86%E6%96%87%E6%A1%A3%E6%B5%81/"/>
+    <id>http://example.com/2022/08/11/%E6%A0%87%E5%87%86%E6%96%87%E6%A1%A3%E6%B5%81/</id>
+    <published>2022-08-11T10:02:48.000Z</published>
+    <updated>2022-08-11T10:05:22.055Z</updated>
+    
+    <content type="html"><![CDATA[<p>标准文档流是一个很抽象的概念。</p><p><strong>标准文档流</strong>：我们使用html标签在编写网页，网页的内容是从上而下，从左往右的一个顺序。但这并不是我们想要的一个效果</p><p><strong>脱离标准文档流：</strong>如果我们加上css，让页面随着我们的想法而改变，就需要使用css里面的</p><p>1、浮动</p><p>2、绝对定位</p><p>3、固定定位</p><p><strong>当HTML元素处于标准文档流时，他们具有这样的性质：</strong></p><p>1、有行内元素、块级元素之分。行内元素不能设置宽高，但是能并排；块级元素可以试着宽高，但是不能并排。块级元素不设置宽高时，会自动撑满；</p><p>2、文字类的元素如果排在一行会出现“高低不齐、底边对齐”效果，即，行高有着一行最高的内容决定</p><p>3、上下margin塌陷；</p><p>4、能margin：0 auto；居中</p><p><strong>言外之意，如果元素脱标了，那么就：</strong></p><p>1、元素托镖之后，不在有行内、块级之分。任何元素脱离标准文档流之后，都能够设置width、height了。任何元素脱离标准文档流之后，如果不设置width，那么会自动收缩，</p><p>2、元素脱标之后，没有“高低不齐，底边对其的效果了”</p><p>3、元素脱标之后，上下margin没有塌陷了，即能够相加、求总和了。</p><p>4、元素托镖之后，不能用margin：0 auto居中了</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;标准文档流是一个很抽象的概念。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;标准文档流&lt;/strong&gt;：我们使用html标签在编写网页，网页的内容是从上而下，从左往右的一个顺序。但这并不是我们想要的一个效果&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;脱离标准文档流：&lt;/strong&gt;如果我们加上c</summary>
+      
+    
+    
+    
+    <category term="笔记" scheme="http://example.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="CSS" scheme="http://example.com/tags/CSS/"/>
+    
+  </entry>
   
   <entry>
     <title>vscode编辑器</title>

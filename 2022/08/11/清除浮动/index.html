@@ -9,7 +9,7 @@
     
     <title>
         
-            分类: 笔记 |
+            清除浮动 |
         
         梧桐的博客
     </title>
@@ -74,7 +74,7 @@
                         </li>
                     
                         <li class="menu-item">
-                            <a class="active"
+                            <a class=""
                                href="/categories"
                             >
                                 分类
@@ -129,7 +129,7 @@
                 </li>
             
                 <li class="drawer-menu-item flex-center">
-                    <a class="active"
+                    <a class=""
                        href="/categories">分类</a>
                 </li>
             
@@ -159,56 +159,166 @@
 
                 
                     <div class="fade-in-down-animation">
-    <div class="category-container">
-        <div class="category-name">
-            <i class="fas fa-folder"></i>&nbsp;笔记
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">清除浮动</span>
         </div>
-        <div class="category-post-list">
-            
-<div class="archive-list-container">
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/avatar.jpg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">梧桐</span>
+                        
+                            <span class="author-label">Lv1</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;
+        <span class="pc">2022-08-11 18:03:53</span>
+        <span class="mobile">2022-08-11 18:03</span>
+    </span>
     
-        <section class="archive-item">
-            <div class="archive-item-header">
-                <span class="archive-year">2022</span>
-                <span class="archive-year-post-count">[3]</span>
-            </div>
-            <ul class="article-list">
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
                 
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2022/08/11/%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8/"
-                        >清除浮动</a>
-                        <span class="article-date">08-11</span>
-                    </li>
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2022/08/11/%E6%A0%87%E5%87%86%E6%96%87%E6%A1%A3%E6%B5%81/"
-                        >标准文档流</a>
-                        <span class="article-date">08-11</span>
-                    </li>
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2022/07/28/HTML%E7%AC%94%E8%AE%B0/"
-                        >HTML笔记</a>
-                        <span class="article-date">07-28</span>
+                    <li>
+                        <a href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>&nbsp;
                     </li>
                 
             </ul>
-        </section>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/CSS/">CSS</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>466 字</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fas fa-clock"></i>&nbsp;<span>1 分钟</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
     
 </div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <p>在《标准文档流》里面提到过<strong>浮动</strong>可以脱离标准文档流（也叫做脱标）</p>
+<p>然后先简单说一下浮动（flout）</p>
+<img src="assets/image-20220811172825250.png" alt="image-20220811172825250" style="zoom:25%;" />
+
+<p>这种就是标准文档流的写法，内容从上而下、从左往右。</p>
+<p>然后我们给下面的三个盒子设置float：left</p>
+<img src="assets/image-20220811173156232.png" alt="image-20220811173156232" style="zoom: 50%;" />
+
+<p>此时三个盒子已经浮动起来了，但我们会发现一件事请，就是外面的盒子，并没有包住三个盒子（这种情况就是脱离了标准文档流）</p>
+<p>于是需要我们去清除浮动</p>
+<p><strong>什么是清除浮动？</strong></p>
+<p>清除浮动的意思是清除元素浮动造成的影响。</p>
+<p>清除浮动的方法1：给父盒子加高</p>
+<p>清除浮动的方法2：让父盒子成为BFC（设置overflow：hidden）</p>
+<p>overflow：hidden；意思是溢出隐藏</p>
+<p>简单俩说，只要父盒子加上overflow：hidden；他就能被浮动的子怨怒是撑出高度了，从而清除了浮动。</p>
+<img src="assets/image-20220811174121004.png" alt="image-20220811174121004" style="zoom:50%;" />
+
+<p>清除浮动的方法3：.clearfix方法</p>
+<p>需要在css样式里面写</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line"><span class="comment">/*伪元素，品控捏造的HTML元素*/</span></span><br><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">::after</span>&#123;</span><br><span class="line">    <span class="comment">/*content这个词语表示“内容”，内容是空*/</span></span><br><span class="line">    <span class="attribute">content</span>:<span class="string">&quot;&quot;</span>;</span><br><span class="line">    <span class="comment">/*清除浮动影响*/</span></span><br><span class="line">    <span class="attribute">clear</span>:both;</span><br><span class="line">    <span class="comment">/*转为块级元素*/</span></span><br><span class="line">    <span class="attribute">display</span>:block;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+
+<p>使用的时候只需要在父盒子添加一个类名就可以了。例如</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;clearfix&quot;</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>2<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>3<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>4<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>BFC</strong></p>
+<p>BFC（Box Formatting Context，块级格式化上下文）是独立渲染容器，它内部的元素不影响区域外的 其他元素，也不会被区域外的其他元素影响。</p>
+<p>形成BFC（块级格式化上下文）的三类方法：</p>
+<p>1、overflow：hidden</p>
+<p>2、脱标（浮动、绝对定位、固定定位）</p>
+<p>3、display的值是inline-block、flex、table-cell</p>
 
         </div>
-    </div>
-    <div class="category-paginator">
-        <div class="paginator">
-    
 
-    
+        
+            <div class="post-copyright-info">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li>本文标题：清除浮动</li>
+        <li>本文作者：梧桐</li>
+        <li>创建时间：2022-08-11 18:03:53</li>
+        <li>
+            本文链接：https://wutong4256.github.io/2022/08/11/清除浮动/
+        </li>
+        <li>
+            版权声明：本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！
+        </li>
+    </ul>
 </div>
 
+            </div>
+        
+
+        
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/tags/CSS/">#CSS</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+            <div class="article-nav">
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/2022/08/11/%E6%A0%87%E5%87%86%E6%96%87%E6%A1%A3%E6%B5%81/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">标准文档流</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
     </div>
 </div>
 
@@ -256,6 +366,23 @@
     </div>
 
     
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fas fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
 
     <div class="right-bottom-side-tools">
         <div class="side-tools-container">
@@ -300,6 +427,14 @@
 
     </div>
 
+    
+        <aside class="page-aside">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        
+    </div>
+</div>
+        </aside>
     
 
     <div class="image-viewer-container">
@@ -355,6 +490,8 @@
 
 
 <div class="post-scripts">
+    
+        <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/left-side-toggle.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/libs/anime.min.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/toc.js"></script>
     
 </div>
 

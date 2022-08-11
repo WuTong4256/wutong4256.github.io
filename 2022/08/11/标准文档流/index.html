@@ -9,7 +9,7 @@
     
     <title>
         
-            分类: 笔记 |
+            标准文档流 |
         
         梧桐的博客
     </title>
@@ -74,7 +74,7 @@
                         </li>
                     
                         <li class="menu-item">
-                            <a class="active"
+                            <a class=""
                                href="/categories"
                             >
                                 分类
@@ -129,7 +129,7 @@
                 </li>
             
                 <li class="drawer-menu-item flex-center">
-                    <a class="active"
+                    <a class=""
                        href="/categories">分类</a>
                 </li>
             
@@ -159,56 +159,166 @@
 
                 
                     <div class="fade-in-down-animation">
-    <div class="category-container">
-        <div class="category-name">
-            <i class="fas fa-folder"></i>&nbsp;笔记
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">标准文档流</span>
         </div>
-        <div class="category-post-list">
-            
-<div class="archive-list-container">
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/avatar.jpg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">梧桐</span>
+                        
+                            <span class="author-label">Lv1</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;
+        <span class="pc">2022-08-11 18:02:48</span>
+        <span class="mobile">2022-08-11 18:02</span>
+    </span>
     
-        <section class="archive-item">
-            <div class="archive-item-header">
-                <span class="archive-year">2022</span>
-                <span class="archive-year-post-count">[3]</span>
-            </div>
-            <ul class="article-list">
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
                 
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2022/08/11/%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8/"
-                        >清除浮动</a>
-                        <span class="article-date">08-11</span>
-                    </li>
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2022/08/11/%E6%A0%87%E5%87%86%E6%96%87%E6%A1%A3%E6%B5%81/"
-                        >标准文档流</a>
-                        <span class="article-date">08-11</span>
-                    </li>
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2022/07/28/HTML%E7%AC%94%E8%AE%B0/"
-                        >HTML笔记</a>
-                        <span class="article-date">07-28</span>
+                    <li>
+                        <a href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>&nbsp;
                     </li>
                 
             </ul>
-        </section>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/CSS/">CSS</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>383 字</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fas fa-clock"></i>&nbsp;<span>1 分钟</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
     
 </div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <p>标准文档流是一个很抽象的概念。</p>
+<p><strong>标准文档流</strong>：我们使用html标签在编写网页，网页的内容是从上而下，从左往右的一个顺序。但这并不是我们想要的一个效果</p>
+<p><strong>脱离标准文档流：</strong>如果我们加上css，让页面随着我们的想法而改变，就需要使用css里面的</p>
+<p>1、浮动</p>
+<p>2、绝对定位</p>
+<p>3、固定定位</p>
+<p><strong>当HTML元素处于标准文档流时，他们具有这样的性质：</strong></p>
+<p>1、有行内元素、块级元素之分。行内元素不能设置宽高，但是能并排；块级元素可以试着宽高，但是不能并排。块级元素不设置宽高时，会自动撑满；</p>
+<p>2、文字类的元素如果排在一行会出现“高低不齐、底边对齐”效果，即，行高有着一行最高的内容决定</p>
+<p>3、上下margin塌陷；</p>
+<p>4、能margin：0 auto；居中</p>
+<p><strong>言外之意，如果元素脱标了，那么就：</strong></p>
+<p>1、元素托镖之后，不在有行内、块级之分。任何元素脱离标准文档流之后，都能够设置width、height了。任何元素脱离标准文档流之后，如果不设置width，那么会自动收缩，</p>
+<p>2、元素脱标之后，没有“高低不齐，底边对其的效果了”</p>
+<p>3、元素脱标之后，上下margin没有塌陷了，即能够相加、求总和了。</p>
+<p>4、元素托镖之后，不能用margin：0 auto居中了</p>
 
         </div>
-    </div>
-    <div class="category-paginator">
-        <div class="paginator">
-    
 
-    
+        
+            <div class="post-copyright-info">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li>本文标题：标准文档流</li>
+        <li>本文作者：梧桐</li>
+        <li>创建时间：2022-08-11 18:02:48</li>
+        <li>
+            本文链接：https://wutong4256.github.io/2022/08/11/标准文档流/
+        </li>
+        <li>
+            版权声明：本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！
+        </li>
+    </ul>
 </div>
 
+            </div>
+        
+
+        
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/tags/CSS/">#CSS</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+            <div class="article-nav">
+                
+                    <div class="article-prev">
+                        <a class="prev"
+                           rel="prev"
+                           href="/2022/08/11/%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8/"
+                        >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">清除浮动</span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/2022/07/30/vscode/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">vscode编辑器</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
     </div>
 </div>
 
@@ -256,6 +366,23 @@
     </div>
 
     
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fas fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
 
     <div class="right-bottom-side-tools">
         <div class="side-tools-container">
@@ -300,6 +427,14 @@
 
     </div>
 
+    
+        <aside class="page-aside">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        
+    </div>
+</div>
+        </aside>
     
 
     <div class="image-viewer-container">
@@ -355,6 +490,8 @@
 
 
 <div class="post-scripts">
+    
+        <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/left-side-toggle.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/libs/anime.min.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/toc.js"></script>
     
 </div>
 
